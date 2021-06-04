@@ -25,12 +25,11 @@ jobs:
 
       # Test
       - name: executing remote ssh commands using password
-        uses: cross-the-world/ssh-pipeline@master
-        # uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@main
         with:
           host: ${{ secrets.TEST_HOST }}
-          user: ${{ secrets.TEST_USER }}
-          pass: ${{ secrets.TEST_PASSWORD }}
+          username: ${{ secrets.TEST_USER }}
+          password: ${{ secrets.TEST_PASSWORD }}
           port: ${{ secrets.TEST_PORT }}
           script: |
             cat api-server/api-server.pid
