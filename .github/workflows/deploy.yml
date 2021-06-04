@@ -40,7 +40,7 @@ jobs:
           host: ${{ secrets.TEST_HOST }}
           username: ${{ secrets.TEST_USER }}
           password: ${{ secrets.TEST_PASSWORD }}
-          # port: ${{ secrets.PORT }} # default : 22
+          port: ${{ secrets.PORT }}
           # script: |
             # cd ${{ secrets.OBOON_WEB_PATH }} && git pull
             # npm install
