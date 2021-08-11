@@ -28,10 +28,13 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v0.1.4
         with:
-          host: ${{ secrets.TEST_HOST }}
-          username: ${{ secrets.TEST_USER }}
+          # host: ${{ secrets.TEST_HOST }}
+          host: "211.169.249.32"
+          # username: ${{ secrets.TEST_USER }}
+          username: "fresheasy"
           # key : ${{ secrets.TEST_KEY }}
           password: ${{ secrets.TEST_PASSWORD }}
-          port: ${{ secrets.TEST_PORT }}
+          # port: ${{ secrets.TEST_PORT }}
+          port: "51021"
           script: whoami
           debug: true
