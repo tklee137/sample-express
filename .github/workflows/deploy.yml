@@ -34,3 +34,4 @@ jobs:
           password: ${{ secrets.TEST_PASSWORD }}
           port: ${{ secrets.TEST_PORT }}
           script: whoami
+          debug: true
