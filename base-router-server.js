@@ -3,6 +3,7 @@
 */
 
 
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -19,7 +20,7 @@ app.use('/static', express.static(__dirname + '/public'));
     브라우저에서 http://localhost:3000/get으로 접근하면 hello world 문자를 볼 수 있다.
 */
 app.get('/get', function (req, res) {
-    res.send('hello world');
+    res.send('hello world!');
 });
 
 /*
